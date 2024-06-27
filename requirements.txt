@@ -1,0 +1,5 @@
+numpy
+time
+selenium
+webdriver-manager
+PyAutoGUI
