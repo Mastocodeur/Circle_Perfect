@@ -10,7 +10,8 @@
 </div>
 
 
-Vous êtes un expert du clavier et de la souris ? Testez vos skills [ici](https://neal.fun/perfect-circle/)
+
+Vous êtes un expert du pad et/ou de la souris ? Testez vos skills [ici](https://neal.fun/perfect-circle/)
 
 
 ## Présentation du projet
