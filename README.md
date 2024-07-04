@@ -1,6 +1,6 @@
 # Can you draw a PERFECT CIRCLE ?
 
-<div style=\"text-align: center;\">,
+<div style="text-align: center;">,
         <img src="images/page accueil.png" width=600 height=300>
     </div>
 
