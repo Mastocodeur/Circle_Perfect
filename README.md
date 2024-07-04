@@ -20,6 +20,8 @@ L'objectif est de réaliser un score supérieur à 97 % (ce qui à priori n'est 
 
 On va réaliser ce projet avec selenium et pyautogui.
 
+Lors de l'éxécution du programme, ne touchez à rien ! Le programme s'occupe de tout, y compris les cookies 😉.
+
 ## Observations
 
 Le site privilégiera toujours la vitesse d'exécution à la précision du tracé. Ainsi, un simple triangle permet d'atteindre un score supérieur à 60%.

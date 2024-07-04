@@ -33,7 +33,7 @@ chrome_options.add_argument("--start-maximized")
 chrome_options.add_experimental_option('useAutomationExtension', False)
 
 # Initialisation du driver Chrome
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 driver.get("https://neal.fun/perfect-circle/")
 print("\nJe suis connecté au site\n")
 
@@ -77,4 +77,23 @@ for angle in angles:
 # Relâcher le clic gauche à la fin du tracé
 pyautogui.mouseUp()
 
-print("J'ai réussi ! A nous le 100%")
+time.sleep(3)
+
+score = driver.find_element(By.CSS_SELECTOR, 'p[data-v-a6c88336]')
+# Récupérez le score de l'élément
+text = score.text
+
+percentage = ""
+for part in text.split():
+    if '%' in part:
+        percentage = part
+        break
+
+# Ajouter une virgule avant le troisième chiffre
+# Supposons que le pourcentage soit au format XX% ou XXX%
+if len(percentage) >= 3 and percentage[-1] == '%':
+    percentage = percentage[:-2] + ',' + percentage[2] + percentage[-1]
+else:
+    percentage = percentage
+
+print(f"Nous avons atteint : {percentage}")
